@@ -8,11 +8,15 @@
 #include <QColor>
 #include <QDebug>
 #include <QMouseEvent>
+#include <QVector>
 class Drawing : public QOpenGLWidget, public QOpenGLFunctions
 {
     Q_OBJECT
 public:
     explicit Drawing(QWidget *parent = nullptr);
+    QVector<double>x,y;
+   // QVector<int>AVV;
+
 protected:
     void initializeGL() override;
     void paintGL() override;
