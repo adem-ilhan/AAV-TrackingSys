@@ -13,12 +13,16 @@ SOURCES += \
     aav.cpp \
     drawing.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    serthread.cpp \
+    server.cpp
 
 HEADERS += \
     aav.h \
     drawing.h \
-    mainwindow.h
+    mainwindow.h \
+    serthread.h \
+    server.h
 
 FORMS += \
     mainwindow.ui

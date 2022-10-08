@@ -38,10 +38,11 @@ void SerThread::run()
 
 void SerThread::readyRead()
 {
-    QByteArray Data = socket->readAll();
+    Data = socket->readAll();
 
     // will write on server side window
     qDebug() << socketDescriptor << " Data in: " << Data;
+
 }
 
 void SerThread::disconnected()

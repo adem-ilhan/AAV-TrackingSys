@@ -12,6 +12,7 @@ class SerThread : public QThread
 public:
     explicit SerThread(qintptr ID,QObject *parent = 0);
     void run();
+    QByteArray Data;
 
   signals:
       void error(QTcpSocket::SocketError socketerror);
